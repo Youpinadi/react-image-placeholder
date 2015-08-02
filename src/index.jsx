@@ -10,7 +10,7 @@ export default class ImagePlaceholder extends Component {
       'bill-murray': `http://www.fillmurray.com/${w}/${h}`,
       'steven-seagal': `http://www.stevensegallery.com/${w}/${h}`,
       'the-hoff': `http://place-hoff.com/${w}/${h}`,
-      'ice-ice-baby': `http://nicenicejpg.com/${w}/${h}`,
+      'vanilla-ice': `http://nicenicejpg.com/${w}/${h}`,
       'bacon': `http://baconmockup.com/${w}/${h}`,
       'beard': `http://placebeard.it/${w}/${h}`,
       'beer': `http://beerhold.it/${w}/${h}`,
@@ -34,44 +34,28 @@ export default class ImagePlaceholder extends Component {
         src = `http://dummyimage.com/${w}x${h}/000000/FFFFFF?text=${this.props.type}`;
     }
 
-    let props = {
-      width: w,
-      height: h,
-      style: {backgroundColor: '#000'},
-      src: src
-    };
-
-    return (<img {...props} />);
+    return (<img src={src} width={w} height={h} style={ {backgroundColor: '#000'} } />);
   }
 }
+ImagePlaceholder.defaultProps = {width: 150, height: 150, type: 'nature'};
+ImagePlaceholder.propTypes = {
+    width: React.PropTypes.number,
+    height: React.PropTypes.number,
+    type: React.PropTypes.string
+};
 
 
-export class NicolasCage extends Component {
-  render() {
-    return (<ImagePlaceholder type="nicolas-cage" {...this.props}/>);
-  }
-}
+export class NicolasCage extends ImagePlaceholder {}
+NicolasCage.defaultProps = {type: 'nicolas-cage'};
 
-export class BillMurray extends Component {
-  render(){
-    return (<ImagePlaceholder type="bill-murray" {...this.props}/>);
-  }
-}
+export class BillMurray extends ImagePlaceholder {}
+BillMurray.defaultProps = {type: 'bill-murray'};
 
-export class StevenSeagal extends Component {
-  render() {
-    return (<ImagePlaceholder type="steven-seagal" {...this.props}/>);
-  }
-}
+export class StevenSeagal extends ImagePlaceholder {}
+StevenSeagal.defaultProps = {type: 'steven-seagal'};
 
-export class TheHoff extends Component {
-  render() {
-    return (<ImagePlaceholder type="the-hoff" {...this.props}/>);
-  }
-}
+export class TheHoff extends ImagePlaceholder {}
+TheHoff.defaultProps = {type: 'the-hoff'};
 
-export class IceIceBaby extends Component {
-  render() {
-    return (<ImagePlaceholder type="ice-ice-baby" {...this.props}/>);
-  }
-}
+export class IceIceBaby extends ImagePlaceholder {}
+VanillaIce.defaultProps = {type: 'vanilla-ice'};

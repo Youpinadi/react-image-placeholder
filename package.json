@@ -1,8 +1,8 @@
 {
   "name": "react-image-placeholder",
-  "description": "A simple placeholder component that uses some of the many placeholder sites",
+  "description": "A simple placeholder component that uses some of the many placeholder sites + some funky components for the swag.",
   "author": "Nadir Kadem <nadir.kadem@gmail.com> (http://www.github.com/Youpinadi)",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "WTFPL",
   "main": "index.js",
   "keywords": [
@@ -17,7 +17,7 @@
     "ice ice baby"
   ],
   "scripts": {
-     "build": "babel src/index.jsx > index.js",
+    "build": "babel src/index.jsx > index.js",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -29,5 +29,9 @@
   },
   "dependencies": {
     "react": "^0.13.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Youpinadi/react-image-placeholder/issues"
+  },
+  "homepage": "https://github.com/Youpinadi/react-image-placeholder"
 }
