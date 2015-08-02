@@ -1,0 +1,33 @@
+{
+  "name": "react-image-placeholder",
+  "description": "A simple placeholder component that uses some of the many placeholder sites",
+  "author": "Nadir Kadem <nadir.kadem@gmail.com> (http://www.github.com/Youpinadi)",
+  "version": "0.1.0",
+  "license": "WTFPL",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "reactjs",
+    "component",
+    "image",
+    "placeholder",
+    "nicolas cage",
+    "the hoff",
+    "steven seagal",
+    "ice ice baby"
+  ],
+  "scripts": {
+     "build": "babel src/index.jsx > index.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Youpinadi/react-image-placeholder.git"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.7"
+  },
+  "dependencies": {
+    "react": "^0.13.0"
+  }
+}
