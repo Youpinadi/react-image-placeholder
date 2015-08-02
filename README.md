@@ -4,6 +4,7 @@ A simple placeholder component that uses some of the many placeholder sites + so
 Why?
 ==============
 There are many placeholder site here, i regrouped them for you in a nice little component, and his little brothers (NicolasCage, BillMurray, StevenSeagal, IceIceBaby).
+
 ImagePlaceholder uses the following sites:
 
 - http://www.placecage.com
