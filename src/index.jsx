@@ -57,5 +57,5 @@ StevenSeagal.defaultProps = {type: 'steven-seagal'};
 export class TheHoff extends ImagePlaceholder {}
 TheHoff.defaultProps = {type: 'the-hoff'};
 
-export class IceIceBaby extends ImagePlaceholder {}
+export class VanillaIce extends ImagePlaceholder {}
 VanillaIce.defaultProps = {type: 'vanilla-ice'};
