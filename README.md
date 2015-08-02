@@ -1,5 +1,5 @@
 # react-image-placeholder
-A simple placeholder component that uses some of the many placeholder sites + some funky components for the swag.
+A simple image placeholder component that uses some of the many placeholder sites + some funky components for the swag.
 
 Why?
 ==============
@@ -20,12 +20,17 @@ and
 
 - http://lorempixel.com for everything more generic
 
+Installation
+==============
+```bash
+npm install react-image-placeholder
+```
 
-Usage:
+Usage (ES6 + JSX):
 ==============
 
 ```javascript
-import ImagePlaceholder, {NicolasCage, BillMurray, StevenSeagal, TheHoff, IceIceBaby} from './image-placeholder/image-placeholder';
+import ImagePlaceholder, {NicolasCage, BillMurray, StevenSeagal, TheHoff, VanillaIce} from './image-placeholder/image-placeholder';
 
 React.render(
   <div>
