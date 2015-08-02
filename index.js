@@ -142,19 +142,19 @@ exports.TheHoff = TheHoff;
 
 TheHoff.defaultProps = { type: 'the-hoff' };
 
-var IceIceBaby = (function (_ImagePlaceholder5) {
-  _inherits(IceIceBaby, _ImagePlaceholder5);
+var VanillaIce = (function (_ImagePlaceholder5) {
+  _inherits(VanillaIce, _ImagePlaceholder5);
 
-  function IceIceBaby() {
-    _classCallCheck(this, IceIceBaby);
+  function VanillaIce() {
+    _classCallCheck(this, VanillaIce);
 
-    _get(Object.getPrototypeOf(IceIceBaby.prototype), 'constructor', this).apply(this, arguments);
+    _get(Object.getPrototypeOf(VanillaIce.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  return IceIceBaby;
+  return VanillaIce;
 })(ImagePlaceholder);
 
-exports.IceIceBaby = IceIceBaby;
+exports.VanillaIce = VanillaIce;
 
 VanillaIce.defaultProps = { type: 'vanilla-ice' };
 
