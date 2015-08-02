@@ -34,7 +34,7 @@ import ImagePlaceholder, {NicolasCage, BillMurray, StevenSeagal, TheHoff, Vanill
 
 React.render(
   <div>
-    <NicolasCage/>
+    <NicolasCage width="200" height="200"/>
     <br/>
     <BillMurray/>
     <br/>
@@ -42,9 +42,9 @@ React.render(
     <br/>
     <StevenSeagal/>
     <br/>
-    <ImagePlaceholder type="beer" width={300} height={300} />
+    <ImagePlaceholder type="beer" width="300" height="300" />
     <br/>
-    <ImagePlaceholder text="my text" width={600} height={400} />
+    <ImagePlaceholder text="my text" width="600" height="400" />
   </div>, 
   document.getElementById('root')
 );
