@@ -2,7 +2,7 @@
   "name": "react-image-placeholder",
   "description": "A simple placeholder component that uses some of the many placeholder sites + some funky components for the swag.",
   "author": "Nadir Kadem <nadir.kadem@gmail.com> (http://www.github.com/Youpinadi)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "WTFPL",
   "main": "index.js",
   "keywords": [

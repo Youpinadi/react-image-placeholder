@@ -4,8 +4,6 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
@@ -40,7 +38,7 @@ var ImagePlaceholder = (function (_Component) {
         'bill-murray': 'http://www.fillmurray.com/' + w + '/' + h,
         'steven-seagal': 'http://www.stevensegallery.com/' + w + '/' + h,
         'the-hoff': 'http://place-hoff.com/' + w + '/' + h,
-        'ice-ice-baby': 'http://nicenicejpg.com/' + w + '/' + h,
+        'vanilla-ice': 'http://nicenicejpg.com/' + w + '/' + h,
         'bacon': 'http://baconmockup.com/' + w + '/' + h,
         'beard': 'http://placebeard.it/' + w + '/' + h,
         'beer': 'http://beerhold.it/' + w + '/' + h,
@@ -64,14 +62,7 @@ var ImagePlaceholder = (function (_Component) {
         src = 'http://dummyimage.com/' + w + 'x' + h + '/000000/FFFFFF?text=' + this.props.type;
       }
 
-      var props = {
-        width: w,
-        height: h,
-        style: { backgroundColor: '#000' },
-        src: src
-      };
-
-      return _react2['default'].createElement('img', props);
+      return _react2['default'].createElement('img', { src: src, width: w, height: h, style: { backgroundColor: '#000' } });
     }
   }]);
 
@@ -80,8 +71,15 @@ var ImagePlaceholder = (function (_Component) {
 
 exports['default'] = ImagePlaceholder;
 
-var NicolasCage = (function (_Component2) {
-  _inherits(NicolasCage, _Component2);
+ImagePlaceholder.defaultProps = { width: 150, height: 150, type: 'nature' };
+ImagePlaceholder.propTypes = {
+  width: _react2['default'].PropTypes.number,
+  height: _react2['default'].PropTypes.number,
+  type: _react2['default'].PropTypes.string
+};
+
+var NicolasCage = (function (_ImagePlaceholder) {
+  _inherits(NicolasCage, _ImagePlaceholder);
 
   function NicolasCage() {
     _classCallCheck(this, NicolasCage);
@@ -89,20 +87,15 @@ var NicolasCage = (function (_Component2) {
     _get(Object.getPrototypeOf(NicolasCage.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  _createClass(NicolasCage, [{
-    key: 'render',
-    value: function render() {
-      return _react2['default'].createElement(ImagePlaceholder, _extends({ type: 'nicolas-cage' }, this.props));
-    }
-  }]);
-
   return NicolasCage;
-})(_react.Component);
+})(ImagePlaceholder);
 
 exports.NicolasCage = NicolasCage;
 
-var BillMurray = (function (_Component3) {
-  _inherits(BillMurray, _Component3);
+NicolasCage.defaultProps = { type: 'nicolas-cage' };
+
+var BillMurray = (function (_ImagePlaceholder2) {
+  _inherits(BillMurray, _ImagePlaceholder2);
 
   function BillMurray() {
     _classCallCheck(this, BillMurray);
@@ -110,20 +103,15 @@ var BillMurray = (function (_Component3) {
     _get(Object.getPrototypeOf(BillMurray.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  _createClass(BillMurray, [{
-    key: 'render',
-    value: function render() {
-      return _react2['default'].createElement(ImagePlaceholder, _extends({ type: 'bill-murray' }, this.props));
-    }
-  }]);
-
   return BillMurray;
-})(_react.Component);
+})(ImagePlaceholder);
 
 exports.BillMurray = BillMurray;
 
-var StevenSeagal = (function (_Component4) {
-  _inherits(StevenSeagal, _Component4);
+BillMurray.defaultProps = { type: 'bill-murray' };
+
+var StevenSeagal = (function (_ImagePlaceholder3) {
+  _inherits(StevenSeagal, _ImagePlaceholder3);
 
   function StevenSeagal() {
     _classCallCheck(this, StevenSeagal);
@@ -131,20 +119,15 @@ var StevenSeagal = (function (_Component4) {
     _get(Object.getPrototypeOf(StevenSeagal.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  _createClass(StevenSeagal, [{
-    key: 'render',
-    value: function render() {
-      return _react2['default'].createElement(ImagePlaceholder, _extends({ type: 'steven-seagal' }, this.props));
-    }
-  }]);
-
   return StevenSeagal;
-})(_react.Component);
+})(ImagePlaceholder);
 
 exports.StevenSeagal = StevenSeagal;
 
-var TheHoff = (function (_Component5) {
-  _inherits(TheHoff, _Component5);
+StevenSeagal.defaultProps = { type: 'steven-seagal' };
+
+var TheHoff = (function (_ImagePlaceholder4) {
+  _inherits(TheHoff, _ImagePlaceholder4);
 
   function TheHoff() {
     _classCallCheck(this, TheHoff);
@@ -152,20 +135,15 @@ var TheHoff = (function (_Component5) {
     _get(Object.getPrototypeOf(TheHoff.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  _createClass(TheHoff, [{
-    key: 'render',
-    value: function render() {
-      return _react2['default'].createElement(ImagePlaceholder, _extends({ type: 'the-hoff' }, this.props));
-    }
-  }]);
-
   return TheHoff;
-})(_react.Component);
+})(ImagePlaceholder);
 
 exports.TheHoff = TheHoff;
 
-var IceIceBaby = (function (_Component6) {
-  _inherits(IceIceBaby, _Component6);
+TheHoff.defaultProps = { type: 'the-hoff' };
+
+var IceIceBaby = (function (_ImagePlaceholder5) {
+  _inherits(IceIceBaby, _ImagePlaceholder5);
 
   function IceIceBaby() {
     _classCallCheck(this, IceIceBaby);
@@ -173,15 +151,10 @@ var IceIceBaby = (function (_Component6) {
     _get(Object.getPrototypeOf(IceIceBaby.prototype), 'constructor', this).apply(this, arguments);
   }
 
-  _createClass(IceIceBaby, [{
-    key: 'render',
-    value: function render() {
-      return _react2['default'].createElement(ImagePlaceholder, _extends({ type: 'ice-ice-baby' }, this.props));
-    }
-  }]);
-
   return IceIceBaby;
-})(_react.Component);
+})(ImagePlaceholder);
 
 exports.IceIceBaby = IceIceBaby;
+
+VanillaIce.defaultProps = { type: 'vanilla-ice' };
 
