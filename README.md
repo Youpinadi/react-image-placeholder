@@ -49,3 +49,7 @@ React.render(
   document.getElementById('root')
 );
 ```
+
+![Image of Nicolas Cage](http://www.placecage.com/300/300)
+
+
