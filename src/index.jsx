@@ -22,7 +22,9 @@ export default class ImagePlaceholder extends Component {
       'technics': `http://lorempixel.com/${w}/${h}/technics`,
       'people': `http://lorempixel.com/${w}/${h}/people`,
       'business': `http://lorempixel.com/${w}/${h}/business`,
-      'city': `http://lorempixel.com/${w}/${h}/city`
+      'city': `http://lorempixel.com/${w}/${h}/city`,
+      'unsplash' : `https://unsplash.it/${w}/${h}?random`
+
     };
 
     let src;

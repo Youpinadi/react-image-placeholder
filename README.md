@@ -15,6 +15,7 @@ ImagePlaceholder uses the following sites:
 - http://baconmockup.com
 - http://placebeard.it
 - http://beerhold.it
+- http://unsplash.it
 
 and 
 
