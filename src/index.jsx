@@ -6,14 +6,8 @@ export default class ImagePlaceholder extends Component {
     let w = this.props.width || rand;
     let h = this.props.height || rand;
     let types = {
-      'nicolas-cage': `http://www.placecage.com/${w}/${h}`,
-      'bill-murray': `http://www.fillmurray.com/${w}/${h}`,
-      'steven-seagal': `http://www.stevensegallery.com/${w}/${h}`,
-      'the-hoff': `http://place-hoff.com/${w}/${h}`,
-      'vanilla-ice': `http://nicenicejpg.com/${w}/${h}`,
       'bacon': `http://baconmockup.com/${w}/${h}`,
       'beard': `http://placebeard.it/${w}/${h}`,
-      'beer': `http://beerhold.it/${w}/${h}`,
 
       'cats': `http://lorempixel.com/${w}/${h}/cats`,
       'nature': `http://lorempixel.com/${w}/${h}/nature`,
@@ -45,19 +39,3 @@ ImagePlaceholder.propTypes = {
     height: React.PropTypes.number,
     type: React.PropTypes.string
 };
-
-
-export class NicolasCage extends ImagePlaceholder {}
-NicolasCage.defaultProps = {type: 'nicolas-cage'};
-
-export class BillMurray extends ImagePlaceholder {}
-BillMurray.defaultProps = {type: 'bill-murray'};
-
-export class StevenSeagal extends ImagePlaceholder {}
-StevenSeagal.defaultProps = {type: 'steven-seagal'};
-
-export class TheHoff extends ImagePlaceholder {}
-TheHoff.defaultProps = {type: 'the-hoff'};
-
-export class VanillaIce extends ImagePlaceholder {}
-VanillaIce.defaultProps = {type: 'vanilla-ice'};
