@@ -3,7 +3,7 @@ A simple image placeholder component that uses some of the many placeholder site
 
 Why?
 ==============
-There are many placeholder site here, i regrouped them for you in a nice little component, and his little brothers (NicolasCage, BillMurray, StevenSeagal, VanillaIce).
+There are many placeholder site here, i regrouped them for you in a nice little component.
 
 ImagePlaceholder uses the following sites:
 
